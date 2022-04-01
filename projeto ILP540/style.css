@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
+body {
+    font-family: 'Cuprum', sans-serif;
+    background-image: url(patinhas.jpg);
+}
+
+header {
+	background-color: pink;
+	
+}
+
+.box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 150px;
+	background-color: pink;
+}
+
+/*------------------------menu de navegação--------------------*/
+.img-logo {
+	width: 12%;
+	padding-left: 200px;
+}
+
+nav {
+	position: absolute;
+	top: 100px;
+	right: 250px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: gray;
+	text-decoration: none;
+}
+
+.box_article{
+	margin: 15%;
+	border: solid 1.2px gray;
+	border-radius: 10px;
+	background-color: #FEFEFE;
+}
+
+footer {
+	text-align: center;
+	background-color: pink;
+	padding: 10px 0;
+}
+
+.copyright {
+	color: black;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+/*-----------------------css da página inicial-----------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 95%;
+    margin: 0 auto;
+} 
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.img-um {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.img-dois {
+	width: 50%;
+    border-radius: 12px;
+    padding-bottom: 5px;
+}
+
+.text-demo {
+    padding-top: 50px;
+}
+
+.text-relacao {
+    padding-top: 50px;
+}
+
+.itens {
+	line-height: 3.2;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+/*---------------------------css curiosidades--------------------------*/
+.curiosidades {
+	text-align: center;
+}
+
+.audio {
+    text-align: center;
+}
+
+.text-ronronar p {
+    margin: 0 2em 1em;
+}
+
+.mapa {
+	padding: 3em 0;	
+}
+
+.mapa-conteudo {
+	width: 800px;
+    margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.catcafe {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.imagem-catcafe {
+	width: 50%;	
+}
+
+.videotag {
+	padding: 10px;
+}
+
+/*------------------------css do mural--------------------------*/
+#container {
+    text-align: center;
+	display: flex;
+}
+
+.mural {
+	width: 940px;
+	margin: 200px auto;
+	padding: 50px;
+}
+
+.mural li {
+	display: inline-block;
+	text-align: center;
+	width: 250px;
+    height: 350px;
+	vertical-align: top;
+	margin: 0 10px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	background-color: #FEFEFE;
+    margin-bottom: 20px;
+}
+
+.mural li:hover {
+	border-color: hotpink;
+}
+
+.mural li:hover h2 {
+	font-size: 35px;
+}
+
+.mural h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.mural-foto {
+	width: 70%;
+	padding: 10px;
+	border-radius: 30px;
+}
+
+.foto-descricao {
+	font-size: 17px;
+	padding-top: 10px;	
+}
+
+/*-------------------------css cadastro------------------------*/
+form {
+	margin: 20px 20px;		
+}
+
+form label, form legend {
+	display:block;
+	font-size: 20px;
+	margin: 20px 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width:40%;
+	padding: 15px 0;
+	background: pink;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+	box-shadow: 5px 5px 5px #555454;
+}
+
+.enviar:hover {
+	background: white;	
+	color: black;
+	transform: scale(1.025);
+}
+
+/*-------------RESPONSIVO --------------*/
+@media screen and (max-width: 480px) { 
+    .box, .principal, .box_article, .conteudo-adotar, .mapa-conteudo, .video, .itens {
+        width: auto;
+		padding: 0.2em;
+    }
+
+	video, audio {
+		text-align: center;	
+		width: 100%;	
+	}
+
+    .enviar {
+        width: 100%;
+        
+    }
+     
+	.box {
+		height: 100px;
+	}
+	
+	.img-logo {
+		float: center;		
+	}
+
+    main {
+        padding-top: 100px;
+    }
+
+	nav {
+		padding-top: 20px;
+    	position: static;				
+    }
+
+	nav ul {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+    .mural, .imagem-catcafe, .img-dois {
+    	width: 100%
+    }
+
+}

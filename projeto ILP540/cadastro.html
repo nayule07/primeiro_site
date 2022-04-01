@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name= "viewport" content= "width=device-width">
+		<title>About Cats</title>
+        <link rel="icon" type="ico" href="logo.ico" />
+                
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">		
+	</head>
+
+	<body>
+		<header>
+			<div class="box">
+				<h1><img src="imagem\logo.png" class="img-logo"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="curiosidades.html">Curiosidades</a></li>
+						<li><a href="mural.html">Mural</a></li>
+						<li><a href="cadastro.html">Cadastro</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+<!-----------------------------------------------------CONTEÚDO CADASTRO---------------------------------------->
+	<main>
+		<article class="box_article">
+			<h4 class="titulo-principal">Compartilhe sua experiência com felinos</h4>
+			<form>
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" class="input-padrao" required placeholder="seu nome">
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@email.com">
+
+				<label for="telefone">Telefone:</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(xx)xxxxxx-xxxx">
+
+				<label for="nomepet">Nome do seu gato:</label>
+				<input type="text" id="nomepet" class="input-padrao" required placeholder="francisco/chico">
+
+				<label for="mensagem">Conte uma história sobre seu gato:</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<fieldset>
+					<legend>Quantos gatos você tem?</legend>
+					<select>
+						<option>1</option>
+						<option>2 ou 3</option>
+						<option> mais de 3</option>
+					</select>
+				</fieldset>
+
+				<fieldset>
+					<legend>Possui outros animais além de gatos?</legend>
+					<label for="radio-sim"><input type="radio" name="contato" id="radio-email">Sim</label>
+					<label for="radio-nao"><input type="radio" name="contato" id="radio-whatsapp" checked>Não</label>
+				</fieldset>
+
+				<label class="checkbox"><input type="checkbox" required>Autorizo a postagem da foto e da história.</label>
+
+				<input type="submit" value="Enviar foto" class="enviar">
+			</form>
+		</article>
+	</main>
+
+	<footer>
+		<img src="imagem\gato-preto.png" width="8%">
+		<p class="copyright">&copy; 21107054 | Letícia Yukimi Nakama - 2022</p>
+	</footer>
+	</body>
+</html>
